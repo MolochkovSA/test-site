@@ -126,6 +126,13 @@ body {
   color: var(--white-color);
 }
 
+@media screen and (max-width: 1280px) {
+  .header__title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .h1 {
     font-size: 46px;
@@ -416,35 +423,10 @@ body {
   letter-spacing: 0.005em;
   margin-bottom: 25px;
 }
-.question__h3.close {
-  text-transform: uppercase;
-  color: var(--accent-color);
-  margin-bottom: 33px;
-}
 .question__p {
   margin-bottom: 36px;
   color: var(--gray-color);
   max-width: 730px;
-}
-.question__h3.open::before,
-.question__h3.close::before {
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/arrow-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 15px;
-  margin-bottom: 3px;
-}
-
-.question__h3.open::before {
-  transform: rotate(-90deg);
-}
-
-.question__h3.close + .question__p {
-  display: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -569,8 +551,6 @@ body {
 .contacts {
   padding: 100px 0 150px;
 }
-.section__h2 {
-}
 .contacts__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -584,14 +564,18 @@ body {
 .contacts__icon {
   width: 50px;
   height: 50px;
-  margin: 0 auto 15px;
+  margin: 0 auto 17px;
 }
 .contacts__h3 {
   text-transform: uppercase;
 }
+.contacts__h3 a {
+  text-decoration: none;
+  color: inherit;
+}
 .contacts__h3-gray {
   color: var(--gray-color);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .contacts__h3-accent {
   color: var(--accent-color);
