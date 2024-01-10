@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var modal = document.querySelectorAll('.modal')
   var instances_modal = M.Modal.init(modal)
-})
 
-document.addEventListener('DOMContentLoaded', function () {})
+  var gallery = document.querySelectorAll('.materialboxed')
+  var instances_media = M.Materialbox.init(gallery)
+})
