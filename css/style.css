@@ -310,6 +310,9 @@ body {
   text-transform: uppercase;
   padding: 14px 30px;
 }
+.request-btn:active {
+  background-color: var(--gray-color);
+}
 .request__btn-icon {
   width: 18px;
   height: 21px;
